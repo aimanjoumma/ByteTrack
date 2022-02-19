@@ -1,6 +1,5 @@
 
 import sys
-sys.path.append("/home/zzh/fru_count/ByteTrack-main")
 
 from loguru import logger
 
