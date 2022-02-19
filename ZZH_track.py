@@ -1,9 +1,6 @@
 from loguru import logger
 import sys
-sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
-sys.path.append('/home/zzh/fru_count/ByteTrack-main')
 import cv2
-
 import torch
 
 from yolox.data.data_augment import preproc
@@ -269,7 +266,7 @@ def imageflow_demo(predictor, vis_folder, current_time, args):
                 timer.toc()
                 online_im = plot_tracking(img_info['raw_img'], online_tlwhs, online_ids, frame_id=frame_id + 1,
                                           fps=1. / timer.average_time)
-                cv2.imshow('demo', online_im)
+                
                 cv2.waitKey(1)
             else:
                 timer.toc()
