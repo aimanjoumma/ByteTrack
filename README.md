@@ -18,7 +18,8 @@ pip3 install cython; pip3 install 'git+https://github.com/cocodataset/cocoapi.gi
 
 Step3. Others
 ```shell
-pip3 install cython_bbox
+#pip3 install cython_bbox
+pip3 install -e git+https://github.com/samson-wang/cython_bbox.git#egg=cython-bbox
 ```
 ### 2. Docker build
 ```shell
